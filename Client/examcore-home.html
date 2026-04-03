@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamCore — დაფა</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="index.temp.css">
+</head>
+
+<body>
+
+  <!-- MOBILE HEADER -->
+  <header class="mobile-header">
+    <div class="logo" style="padding:0;border:none">
+      <div class="logo-icon" style="width:28px;height:28px;border-radius:7px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+          stroke-linejoin="round" style="width:14px;height:14px">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+        </svg>
+      </div>
+      <span class="logo-name">ExamCore</span>
+    </div>
+    <div class="mobile-avatar">ZK</div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ── SIDEBAR ── -->
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+          </svg>
+        </div>
+        <span class="logo-name">ExamCore</span>
+      </div>
+
+      <div class="nav-section">
+        <span class="nav-label">მთავარი</span>
+        <a class="nav-item nav-dashboard" href="#page-dashboard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1" />
+            <rect x="14" y="3" width="7" height="7" rx="1" />
+            <rect x="3" y="14" width="7" height="7" rx="1" />
+            <rect x="14" y="14" width="7" height="7" rx="1" />
+          </svg>
+          დაფა
+        </a>
+        <a class="nav-item nav-exams" href="#page-exams">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+          </svg>
+          გამოცდები
+          <span class="nav-badge">5</span>
+        </a>
+        <a class="nav-item nav-classes" href="#page-classes">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+          კლასები
+          <span class="nav-badge">4</span>
+        </a>
+        <a class="nav-item nav-students" href="#page-students">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M20 21a8 8 0 1 0-16 0" />
+          </svg>
+          სტუდენტები
+          <span class="nav-badge">24</span>
+        </a>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="user-block">
+          <div class="avatar">ZK</div>
+          <div>
+            <div class="user-name">Zee K.</div>
+            <div class="user-role">ადმინისტრატორი</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ── MAIN ── -->
+    <main class="main">
+
+      <!-- ══ DASHBOARD PAGE ══════════════════════════════════ -->
+      <div class="page" id="page-dashboard">
+        <div class="page-header">
+          <div class="page-header-left">
+            <h1>დილა მშვიდობისა, Zee 👋</h1>
+            <p>აქ არის თქვენი სისტემის მიმოხილვა.</p>
+          </div>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="stats-row">
+          <div class="stat-card sc-blue">
+            <div class="stat-icon si-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+              </svg>
+            </div>
+            <div class="stat-num">5</div>
+            <div class="stat-label">გამოცდები სულ</div>
+            <a class="stat-action sa-blue" href="#page-exams">გამოცდებზე გადასვლა <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></a>
+          </div>
+          <div class="stat-card sc-green">
+            <div class="stat-icon si-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="stat-num">4</div>
+            <div class="stat-label">კლასები სულ</div>
+            <a class="stat-action sa-green" href="#page-classes">კლასებზე გადასვლა <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></a>
+          </div>
+          <div class="stat-card sc-orange">
+            <div class="stat-icon si-orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M20 21a8 8 0 1 0-16 0" />
+              </svg>
+            </div>
+            <div class="stat-num">24</div>
+            <div class="stat-label">სტუდენტები სულ</div>
+            <a class="stat-action sa-orange" href="#page-students">სტუდენტებზე გადასვლა <svg viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></a>
+          </div>
+        </div>
+
+        <!-- Bottom two-col -->
+        <div class="two-col">
+
+          <!-- Recent Activity -->
+          <div class="content-card">
+            <div class="content-card-header">
+              <h3>ბოლო აქტივობა</h3>
+              <span class="pill pill-gray">დღეს</span>
+            </div>
+            <div class="activity-list">
+              <div class="activity-item">
+                <div class="activity-dot" style="background:#4361ee"></div>
+                <div>
+                  <div class="activity-text">გამოცდა <strong>ალგებრა — შუალედური</strong> შეიქმნა</div>
+                  <div class="activity-time">2 საათის წინ</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-dot" style="background:#22c55e"></div>
+                <div>
+                  <div class="activity-text">სტუდენტი <strong>ნინო კაპანაძე</strong> დაემატა</div>
+                  <div class="activity-time">4 საათის წინ</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-dot" style="background:#f97316"></div>
+                <div>
+                  <div class="activity-text">კლასი <strong>ფიზიკა 11ა</strong> შეიქმნა</div>
+                  <div class="activity-time">გუშინ, 15:30</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-dot" style="background:#a855f7"></div>
+                <div>
+                  <div class="activity-text">გამოცდა <strong>ქიმია — საბოლოო</strong> დაიგეგმა</div>
+                  <div class="activity-time">გუშინ, 11:00</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-dot" style="background:#22c55e"></div>
+                <div>
+                  <div class="activity-text">3 სტუდენტი კლასს <strong>მათემ. 10ბ</strong> დაემატა</div>
+                  <div class="activity-time">2 დღის წინ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Summary -->
+          <div class="content-card">
+            <div class="content-card-header">
+              <h3>სწრაფი სტატისტიკა</h3>
+            </div>
+            <div class="summary-row">
+              <div class="summary-item">
+                <div class="summary-val" style="color:#809aff">2</div>
+                <div class="summary-key">აქტიური გამოცდა</div>
+              </div>
+              <div class="summary-item">
+                <div class="summary-val" style="color:#4ade80">3</div>
+                <div class="summary-key">დაგეგმილი</div>
+              </div>
+              <div class="summary-item">
+                <div class="summary-val" style="color:#fb923c">6</div>
+                <div class="summary-key">სტუდ. ამ კვირას</div>
+              </div>
+              <div class="summary-item">
+                <div class="summary-val" style="color:#c084fc">1</div>
+                <div class="summary-key">მონახაზი</div>
+              </div>
+            </div>
+            <div style="padding:0 16px 16px">
+              <div
+                style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px;">
+                <div
+                  style="font-size:.72rem;color:var(--txt3);text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:10px">
+                  სტატუსები</div>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                  <div style="display:flex;justify-content:space-between;align-items:center">
+                    <span style="font-size:.8rem;color:var(--txt2)">აქტიური</span>
+                    <div style="display:flex;align-items:center;gap:8px">
+                      <div style="width:80px;height:5px;background:var(--surface2);border-radius:3px;overflow:hidden">
+                        <div style="width:40%;height:100%;background:#4361ee;border-radius:3px"></div>
+                      </div>
+                      <span style="font-size:.75rem;font-weight:600;color:#809aff">2</span>
+                    </div>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center">
+                    <span style="font-size:.8rem;color:var(--txt2)">დაგეგმილი</span>
+                    <div style="display:flex;align-items:center;gap:8px">
+                      <div style="width:80px;height:5px;background:var(--surface2);border-radius:3px;overflow:hidden">
+                        <div style="width:60%;height:100%;background:#22c55e;border-radius:3px"></div>
+                      </div>
+                      <span style="font-size:.75rem;font-weight:600;color:#4ade80">3</span>
+                    </div>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center">
+                    <span style="font-size:.8rem;color:var(--txt2)">მონახაზი</span>
+                    <div style="display:flex;align-items:center;gap:8px">
+                      <div style="width:80px;height:5px;background:var(--surface2);border-radius:3px;overflow:hidden">
+                        <div style="width:20%;height:100%;background:#6b7394;border-radius:3px"></div>
+                      </div>
+                      <span style="font-size:.75rem;font-weight:600;color:var(--txt2)">1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══ EXAMS PAGE ══════════════════════════════════════ -->
+      <div class="page" id="page-exams">
+        <div class="page-header">
+          <div>
+            <h1>გამოცდები</h1>
+            <p>მართეთ და დაგეგმეთ ყველა გამოცდა.</p>
+            <div class="count-pill">
+              <span class="dot" style="background:#4361ee"></span>
+              <span>5 გამოცდა</span>
+            </div>
+          </div>
+          <button class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+            </svg>
+            გამოცდის შექმნა
+          </button>
+        </div>
+
+        <div class="content-card">
+          <div class="content-card-header">
+            <h3>ყველა გამოცდა</h3>
+            <div class="search-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input class="search-input" placeholder="გამოცდების ძიება…" />
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>სათაური</th>
+                  <th>კლასი</th>
+                  <th>ხანგრ.</th>
+                  <th>თარიღი</th>
+                  <th>სტატუსი</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>ალგებრა — შუალედური</strong></td>
+                  <td>მათემ. 10ბ</td>
+                  <td>90 წთ</td>
+                  <td>15 აპრ 2025</td>
+                  <td><span class="pill pill-green">აქტიური</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                          <path d="M10 11v6" />
+                          <path d="M14 11v6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>ფიზიკა — საბოლოო</strong></td>
+                  <td>ფიზიკა 11ა</td>
+                  <td>120 წთ</td>
+                  <td>22 აპრ 2025</td>
+                  <td><span class="pill pill-blue">დაგეგმილი</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                          <path d="M10 11v6" />
+                          <path d="M14 11v6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>ქიმია — საბოლოო</strong></td>
+                  <td>ქიმია 10ა</td>
+                  <td>90 წთ</td>
+                  <td>28 აპრ 2025</td>
+                  <td><span class="pill pill-blue">დაგეგმილი</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                          <path d="M10 11v6" />
+                          <path d="M14 11v6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>ისტორია — შუალედური</strong></td>
+                  <td>ისტ. 9ბ</td>
+                  <td>60 წთ</td>
+                  <td>—</td>
+                  <td><span class="pill pill-gray">მონახაზი</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                          <path d="M10 11v6" />
+                          <path d="M14 11v6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>ლიტერატურა — ტესტი</strong></td>
+                  <td>ლიტ. 11ბ</td>
+                  <td>45 წთ</td>
+                  <td>5 მაი 2025</td>
+                  <td><span class="pill pill-green">აქტიური</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                          <path d="M10 11v6" />
+                          <path d="M14 11v6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ CLASSES PAGE ════════════════════════════════════ -->
+      <div class="page" id="page-classes">
+        <div class="page-header">
+          <div>
+            <h1>კლასები</h1>
+            <p>დაალაგეთ სტუდენტები კლასის ჯგუფებში.</p>
+            <div class="count-pill">
+              <span class="dot" style="background:#22c55e"></span>
+              <span>4 კლასი</span>
+            </div>
+          </div>
+          <button class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+            </svg>
+            კლასის შექმნა
+          </button>
+        </div>
+
+        <div class="class-grid">
+
+          <div class="class-card cc-blue">
+            <div class="class-card-header">
+              <div class="class-icon si-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#809aff" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="12" y1="20" x2="12" y2="10" />
+                  <line x1="18" y1="20" x2="18" y2="4" />
+                  <line x1="6" y1="20" x2="6" y2="16" />
+                </svg>
+              </div>
+              <div class="actions-cell">
+                <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="19" cy="12" r="1" />
+                    <circle cx="5" cy="12" r="1" />
+                  </svg></button>
+              </div>
+            </div>
+            <div class="class-name">მათემ. 10ბ</div>
+            <div class="class-subject">მათემატიკა — მე-10 კლასი</div>
+            <div class="class-meta">
+              <div class="class-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M20 21a8 8 0 1 0-16 0" />
+                </svg>
+                7 სტუდ.
+              </div>
+              <div class="class-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                </svg>
+                2 გამ.
+              </div>
+              <span class="pill pill-blue" style="margin-left:auto">ბ-ნი ჯი.</span>
+            </div>
+          </div>
+
+          <div class="class-card cc-orange">
+            <div class="class-card-header">
+              <div class="class-icon si-orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="12" />
+                  <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+              </div>
+              <div class="actions-cell">
+                <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="19" cy="12" r="1" />
+                    <circle cx="5" cy="12" r="1" />
+                  </svg></button>
+              </div>
+            </div>
+            <div class="class-name">ფიზიკა 11ა</div>
+            <div class="class-subject">ფიზიკა — მე-11 კლასი</div>
+            <div class="class-meta">
+              <div class="class-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M20 21a8 8 0 1 0-16 0" />
+                </svg>
+                6 სტუდ.
+              </div>
+              <div class="class-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                </svg>
+                1 გამ.
+              </div>
+              <span class="pill pill-orange" style="margin-left:auto">ქ-ნი ლ.</span>
+            </div>
+          </div>
+
+          <div class="class-card cc-green">
+            <div class="class-card-header">
+              <div class="class-icon si-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" />
+                </svg>
+              </div>
+              <div class="actions-cell">
+                <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="19" cy="12" r="1" />
+                    <circle cx="5" cy="12" r="1" />
+                  </svg></button>
+              </div>
+            </div>
+            <div class="class-name">ქიმია 10ა</div>
+            <div class="class-subject">ქიმია — მე-10 კლასი</div>
+            <div class="class-meta">
+              <div class="class-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M20 21a8 8 0 1 0-16 0" />
+                </svg>
+                5 სტუდ.
+              </div>
+              <div class="class-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                </svg>
+                1 გამ.
+              </div>
+              <span class="pill pill-green" style="margin-left:auto">ბ-ნი ც.</span>
+            </div>
+          </div>
+
+          <div class="class-card cc-purple">
+            <div class="class-card-header">
+              <div class="class-icon" style="background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.25)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              </div>
+              <div class="actions-cell">
+                <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="19" cy="12" r="1" />
+                    <circle cx="5" cy="12" r="1" />
+                  </svg></button>
+              </div>
+            </div>
+            <div class="class-name">ისტ. 9ბ</div>
+            <div class="class-subject">ისტორია — მე-9 კლასი</div>
+            <div class="class-meta">
+              <div class="class-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M20 21a8 8 0 1 0-16 0" />
+                </svg>
+                6 სტუდ.
+              </div>
+              <div class="class-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                </svg>
+                1 გამ.
+              </div>
+              <span class="pill"
+                style="background:rgba(168,85,247,.12);color:#c084fc;border:1px solid rgba(168,85,247,.25);margin-left:auto">ქ-ნი
+                ა.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══ STUDENTS PAGE ═══════════════════════════════════ -->
+      <div class="page" id="page-students">
+        <div class="page-header">
+          <div>
+            <h1>სტუდენტები</h1>
+            <p>მართეთ ყველა დარეგისტრირებული სტუდენტი.</p>
+            <div class="count-pill">
+              <span class="dot" style="background:#f97316"></span>
+              <span>24 სტუდენტი</span>
+            </div>
+          </div>
+          <button class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+            </svg>
+            სტუდ. დამატება
+          </button>
+        </div>
+
+        <div class="content-card">
+          <div class="content-card-header">
+            <h3>ყველა სტუდენტი</h3>
+            <div class="search-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input class="search-input" placeholder="სტუდენტების ძიება…" />
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>სახელი</th>
+                  <th>კლასი</th>
+                  <th>ID</th>
+                  <th>სტატ.</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="cell-user">
+                      <div class="cell-avatar ca-1">გმ</div>
+                      <div>
+                        <div class="cell-name">გიორგი მამულაშვილი</div>
+                        <div class="cell-email">g.mamulashvili@school.ge</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>მათემ. 10ბ</td>
+                  <td>STU-001</td>
+                  <td><span class="pill pill-green">აქტ.</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                          <circle cx="12" cy="12" r="3" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cell-user">
+                      <div class="cell-avatar ca-2">ნკ</div>
+                      <div>
+                        <div class="cell-name">ნინო კაპანაძე</div>
+                        <div class="cell-email">n.kapanadze@school.ge</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>ფიზიკა 11ა</td>
+                  <td>STU-002</td>
+                  <td><span class="pill pill-green">აქტ.</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                          <circle cx="12" cy="12" r="3" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cell-user">
+                      <div class="cell-avatar ca-3">ლბ</div>
+                      <div>
+                        <div class="cell-name">ლაშა ბეგიაშვილი</div>
+                        <div class="cell-email">l.begiashvili@school.ge</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>ქიმია 10ა</td>
+                  <td>STU-003</td>
+                  <td><span class="pill pill-orange">შვებ.</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                          <circle cx="12" cy="12" r="3" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cell-user">
+                      <div class="cell-avatar ca-4">მქ</div>
+                      <div>
+                        <div class="cell-name">მარიამ ქობულაძე</div>
+                        <div class="cell-email">m.qobuladze@school.ge</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>ისტ. 9ბ</td>
+                  <td>STU-004</td>
+                  <td><span class="pill pill-green">აქტ.</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                          <circle cx="12" cy="12" r="3" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cell-user">
+                      <div class="cell-avatar ca-5">ათ</div>
+                      <div>
+                        <div class="cell-name">ანა თხელიძე</div>
+                        <div class="cell-email">a.tkhelidze@school.ge</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>მათემ. 10ბ</td>
+                  <td>STU-005</td>
+                  <td><span class="pill pill-green">აქტ.</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                          <circle cx="12" cy="12" r="3" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="cell-user">
+                      <div class="cell-avatar ca-6">ზვ</div>
+                      <div>
+                        <div class="cell-name">ზაზა ვარდოსანიძე</div>
+                        <div class="cell-email">z.vardosanidze@school.ge</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>ფიზიკა 11ა</td>
+                  <td>STU-006</td>
+                  <td><span class="pill pill-gray">გათ.</span></td>
+                  <td>
+                    <div class="actions-cell">
+                      <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                          <circle cx="12" cy="12" r="3" />
+                        </svg></button>
+                      <button class="action-btn" style="color:#ef4444"><svg viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="3 6 5 6 21 6" />
+                          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                        </svg></button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- MOBILE BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <div class="bn-items">
+      <a class="bn-item nav-dashboard" href="#page-dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7" rx="1" />
+          <rect x="14" y="3" width="7" height="7" rx="1" />
+          <rect x="3" y="14" width="7" height="7" rx="1" />
+          <rect x="14" y="14" width="7" height="7" rx="1" />
+        </svg>
+        დაფა
+      </a>
+      <a class="bn-item nav-exams" href="#page-exams">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <line x1="16" y1="13" x2="8" y2="13" />
+          <line x1="16" y1="17" x2="8" y2="17" />
+        </svg>
+        გამ.
+      </a>
+      <a class="bn-item nav-classes" href="#page-classes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+        </svg>
+        კლ.
+      </a>
+      <a class="bn-item nav-students" href="#page-students">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M20 21a8 8 0 1 0-16 0" />
+        </svg>
+        სტუდ.
+      </a>
+    </div>
+  </nav>
+
+</body>
+
+</html>

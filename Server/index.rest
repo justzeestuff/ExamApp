@@ -1,0 +1,84 @@
+### Register
+POST http://localhost:3000/Register
+Content-Type: application/json
+
+{
+  "username": "username",
+  "specialName": "specialName",
+  "password": "password"
+}
+
+### Login
+POST http://localhost:3000/Login
+Content-Type: application/json
+
+{
+  "specialName": "yourspecialname",
+  "password": "yourpassword"
+}
+
+### Create Class
+POST http://localhost:3000/CreateClass
+Content-Type: application/json
+
+{
+  "classNumber": "2-1"
+}
+
+### GET CLASS
+GET http://localhost:3000/GetClass
+
+
+### CREATE A STUDENT
+POST http://localhost:3000/CreateStudent
+Content-Type: application/json
+
+{
+  "classNumber": "2-1",
+  "firstName": "luka",
+  "lastName": "chxobadze"
+}
+
+### CREATE EXAM
+
+POST http://localhost:3000/CreateExam
+Content-Type: application/json
+
+{
+  "subject": "yle"
+}
+
+
+### ASSIGN EXAM
+POST http://localhost:3000/AssignExam
+Content-Type: application/json
+
+{
+  "selectedClass": "69cb6f556e8890b4ab92362d",
+  "selectedExam": "69cb6f6e6e8890b4ab92362f"
+}
+
+### CREATE QUESTION
+POST http://localhost:3000/createQuestion
+Content-Type: application/json
+
+{
+  "question": "zezva123"
+}
+
+### CREATE Answer
+POST http://localhost:3000/createAnswer
+Content-Type: application/json
+
+{
+  "answer": "zezva123",
+  "correct": true
+}
+
+### GET ACCESS TO EXAMS
+GET http://localhost:3000/Access
+Content-Type: application/json
+
+{
+  "classId": "69cb6f6e6e8890b4ab92362f"
+}
