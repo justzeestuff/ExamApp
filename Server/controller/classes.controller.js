@@ -8,7 +8,7 @@ const CreateClasses = async (req,res) =>{
 
         await collection.insertOne({
             classNumber: req.body.classNumber,
-            students: []
+            assignedExams: []
         })
         res.status(200).json({message: "sucessful"})
     }

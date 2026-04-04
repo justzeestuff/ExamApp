@@ -2,8 +2,9 @@ const express = require('express');
 const route = express.Router()
 
 route.post('/CreateExam', require('../controller/exams.controller.js').CreateExams)
-route.post('/AssignExam', require('../controller/exams.controller.js').AssignExams)
 route.post('/createQuestion', require('../controller/exams.controller.js').CreateQuestions)
-route.get('/Access', require('../controller/exams.controller.js').Access)
+route.delete('/DeleteExam/:id', require('../controller/exams.controller.js').DeleteExam)
+route.get('/GetExams', require('../controller/exams.controller.js').GetExams)
+route.get('/GetQuestions', require('../controller/exams.controller.js').GetQuestions)
 
 module.exports = route

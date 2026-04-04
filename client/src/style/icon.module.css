@@ -1,0 +1,12 @@
+.pageIcon{
+    color: white;
+
+    background: var(--iconBackground);
+    box-shadow: 0 0 13px var(--iconColor1);
+    box-shadow: 0 0 5px var(--iconColor2);
+
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}

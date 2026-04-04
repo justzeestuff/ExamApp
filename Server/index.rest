@@ -28,6 +28,10 @@ Content-Type: application/json
 ### GET CLASS
 GET http://localhost:3000/GetClass
 
+### GET STUDENTS
+GET http://localhost:3000/GetStudents
+
+GET http://localhost:3000/GetStudents
 
 ### CREATE A STUDENT
 POST http://localhost:3000/CreateStudent
@@ -35,8 +39,8 @@ Content-Type: application/json
 
 {
   "classNumber": "2-1",
-  "firstName": "luka",
-  "lastName": "chxobadze"
+  "first": "luka",
+  "last": "chxobadze"
 }
 
 ### CREATE EXAM
@@ -47,6 +51,9 @@ Content-Type: application/json
 {
   "subject": "yle"
 }
+
+### GET EXAMS
+GET http://localhost:3000/GetExams
 
 
 ### ASSIGN EXAM
@@ -65,6 +72,10 @@ Content-Type: application/json
 {
   "question": "zezva123"
 }
+
+### GET QUESTIONS
+GET http://localhost:3000/GetQuestions
+Content-Type: application/json
 
 ### CREATE Answer
 POST http://localhost:3000/createAnswer
