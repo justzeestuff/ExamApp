@@ -3,6 +3,7 @@
   --shadow-colors: #cbcbcb;
   --iconBackground: linear-gradient(135deg,var(--iconColor1) ,var(--iconColor2) );
   --iconColor1: #2563eb;
+  --transparentIconColor1: #2564eb38;
   --iconColor2: #7c3aed;
   --textColor: #475569;
 }
@@ -15,4 +16,11 @@
 @font-face {
   font-family: Syne;
   src: url(./fonts/Syne.ttf);
+}
+#root{
+  display: flex;
+}
+.pageContainer{
+  width: 100%;
+  padding: 50px;
 }

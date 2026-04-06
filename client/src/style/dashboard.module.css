@@ -1,0 +1,17 @@
+.dashBoard{
+    width: 100%;
+}
+.dashBoard .welcomeMessage h1{
+    color: black;
+    font-size: 22px;
+}
+.dashBoard .welcomeMessage{
+    font-size: 13px;
+}
+.dashBoard .statsContainer{
+    margin-top: 20px;
+    width: 100%;
+    
+    display: flex;
+    gap: 30px;
+}

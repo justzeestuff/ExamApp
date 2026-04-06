@@ -1,0 +1,38 @@
+.createExamPanel{
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--aside-LightMode);
+    box-shadow: 0 0 10px var(--shadow-colors);
+    border-radius: 10px;
+}
+.createExamPanel h1{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.createExamPanel section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.createExamPanel section button{
+    padding: 10px;
+}
+.createExamPanel input{
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 0 4px var(--shadow-colors);
+    margin: 10px;
+}
+.createExamPanel button{
+    padding: 7px 20px;
+    background-color: var(--iconColor2);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--iconColor2);
+    cursor: pointer;
+}

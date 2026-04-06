@@ -1,0 +1,95 @@
+.exams{
+    width: 100%;
+}
+.exams h1{
+    font-size: 24px;
+    color: black;
+}
+.exams section{
+    color: var(--textColor);
+}
+.exams .allExams{
+    width: 100%;
+    box-shadow: 0 0 3px var(--shadow-colors);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.exams .allExams section{
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.exams .allExams section p{
+    font-size: 19px;
+    font-weight: bold;
+}
+.exams .allExams section input{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    text-indent: 15px;
+    border: none;
+    box-shadow: 0 0 3px var(--shadow-colors);
+    background-color: #f1f5f9;
+    color: var(--textColor);;
+
+    background-image: url(../assets/magnifying-glass-18.png);
+    background-position: center;
+    background-position-x: 5px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.exams .allExams .examContainer section{
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+}
+.exams .allExams .examContainer section p{
+    font-weight: lighter;
+    font-size: 14px;
+}
+.exams .createExam{
+    padding: 10px;
+    background-color: var(--iconColor2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--iconColor1);
+
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.exams .createExamPanel{
+    padding: 20px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 3px var(--shadow-colors);
+    border-radius: 5px;
+}
+.exams .createExamPanel h1{
+    font-size: 16px;
+}
+.exams .createExamPanel .title{
+    display: flex;
+    justify-content: space-between;
+}
+.exams .createExamPanel .inputField input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 2px var(--shadow-colors);
+    background-color: #f1f5f9;
+    margin: 20px;
+}
+.exams .createExamPanel .inputField button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--iconColor2);
+    box-shadow: 0 0 10px var(--iconColor2);
+    border: none;
+    color: white;
+}

@@ -1,0 +1,16 @@
+.addQuestionBtn{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--iconColor2);
+    box-shadow: 0 0 5px var(--iconColor2);
+    color: white;
+
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.questionContainer{
+    width: 100%;
+    margin-top: 60px;
+}

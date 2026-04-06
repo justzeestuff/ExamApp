@@ -1,0 +1,30 @@
+.statisticsDisplayer{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--aside-LightMode);
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--shadow-colors);
+    font-family: sans-serif;
+}
+.statisticsDisplayer div{
+    width: 5px;
+    height: 5px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--iconColor2);
+    background-color: var(--transparentIconColor1);
+}
+.statisticsDisplayer div i{
+    color: var(--iconColor2);
+}
+.statisticsDisplayer section p:first-child{
+    font-size: 30px;
+}
+.statisticsDisplayer .pathEl{
+    margin-top: 10px;
+    color: var(--iconColor2);
+    text-shadow: 0 0 10px var(--iconColor1);
+}

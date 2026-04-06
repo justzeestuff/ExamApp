@@ -1,0 +1,21 @@
+.examList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.examList div button{
+    padding: 10px;
+    margin: 0 10px;
+    background-color: var(--iconColor2);
+    color: white;
+    border: none;
+    box-shadow: 0 0 5px var(--iconColor2);
+    transition: ease 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.examList div button:hover{
+    background-color: white;
+    color: var(--iconColor2);
+}

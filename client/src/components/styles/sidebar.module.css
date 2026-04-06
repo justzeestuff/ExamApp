@@ -1,6 +1,6 @@
 .sidebar{
     height: 100vh;
-    width: 240px;
+    width: 320px;
     background-color: var(--asideLightMode);
     box-shadow: 0 0 5px var(--shadow-colors);
     padding: 10px 0;
@@ -25,21 +25,19 @@
     font-size: 13px;
     margin-bottom: 10px;
 }
-.sidebar nav a{
+.sidebar nav p{
     font-family: Syne sans-serif;
     color: var(--textColor);
     white-space: 10px;
     padding: 15px;
     transition: ease 0.3s;
     border-radius: 5px;
+    cursor: pointer;
 }
-.sidebar nav a:hover{
+.sidebar nav p:hover{
     background-color: rgba(132, 140, 202, 0.369);
 }
-.sidebar nav a i{
+.sidebar nav p i{
     color: var(--iconColor1);
     margin-left: 5px;
-}
-.sidebar nav a span{
-    margin-left: 10px;
 }
