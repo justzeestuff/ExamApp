@@ -3,7 +3,6 @@
     width: 320px;
     background-color: var(--asideLightMode);
     box-shadow: 0 0 5px var(--shadow-colors);
-    padding: 10px 0;
 }
 .sidebar .iconContainer{
     display: flex;

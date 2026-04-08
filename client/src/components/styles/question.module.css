@@ -1,4 +1,84 @@
 .question{
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 3px var(--iconColor2);
+    overflow: hidden;
+    border-radius: 10px;
+}
+.question .questionTab{
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-    box-shadow: 0 0 3px var(--shadow-colors);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 0 3px var(--iconColor2);
+    cursor: pointer;
+    transition: ease 0.3s;
+    user-select: none;
+}
+.question .questionTab:hover{
+    box-shadow: 0 0 15px var(--iconColor2);
+}
+.question .questionTab p span:first-child{
+    padding: 13px 20px;
+    border-radius: 100px;
+    background-color: var(--iconColor2);
+    box-shadow: 0 0 3px var(--iconColor2);
+    color: white;
+    margin-right: 20px;
+}
+.question .questionTab button{
+    padding: 15px;
+    border-radius: 0;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    color: var(--iconColor2);
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+.question .questionTab button:hover{
+    background-color: var(--iconColor2);
+    color: white;
+}
+.question .answersContainer{
+    padding: 20px;
+}
+.question .answersContainer section{
+    width: 100%;
+}
+.question .answersContainer section{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.question .answersContainer section button{
+    padding: 10px;
+    background-color: var(--iconColor2);
+    box-shadow: 0 0 5px var(--iconColor2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.question .answersContainer section input[type='checkbox']{
+    appearance: none;
+    padding: 15px;
+}
+.question .answersContainer section input{
+    margin: 10px;
+}
+.question .answersContainer section input:first-child{
+    border: 3px solid var(--iconColor2);
+    border-radius: 3px;
+    background-color: transparent;
+}
+.question .answersContainer section input:last-child{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 3px solid var(--iconColor2);
 }

@@ -1,11 +1,15 @@
 :root{
-  --aside-LightMode: #f8fafc;
-  --shadow-colors: #cbcbcb;
+  --aside-LightMode: #ffffff;
+  --shadow-colors: #b6bed5;
   --iconBackground: linear-gradient(135deg,var(--iconColor1) ,var(--iconColor2) );
   --iconColor1: #2563eb;
   --transparentIconColor1: #2564eb38;
   --iconColor2: #7c3aed;
   --textColor: #475569;
+}
+body{
+  background-color: #f3f5f7;
+  overflow: hidden;
 }
 *{
   padding: 0;
@@ -19,8 +23,10 @@
 }
 #root{
   display: flex;
+  height: 100vh;
 }
 .pageContainer{
   width: 100%;
   padding: 50px;
+  overflow: auto;
 }

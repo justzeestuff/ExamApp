@@ -86,20 +86,18 @@ const DeleteExam = async (req, res) => {
         await client.close();
     }
 }
-const GetQuestions = async (req, res) => {
+const EditExam = async (req, res) => {
     const client = new MongoClient('mongodb://127.0.0.1:27017')
     try {
         await client.connect();
         const collection = client.db('exams').collection('exams');
 
-        const {_id} = req.params
+        const {id} = req.params
 
-        // const match = await collection.findOne({
-        //     "_id": new ObjectId(_id)
-        // })
-        
-        const match = await collection.find().toArray()
-
+        const match = await collection.findOne({
+            "_id": new ObjectId(id)
+        })
+        // const match = await collection.find().toArray()
         res.status(200).json(match)
     }
     catch (err) {
@@ -133,4 +131,5 @@ const CreateAnswer = async (req, res) => {
         await client.close();
     }
 }
-module.exports = { CreateExams, CreateQuestions, CreateAnswer, GetExams, DeleteExam,GetQuestions };
+
+module.exports = { CreateExams, CreateQuestions, CreateAnswer, GetExams, DeleteExam, EditExam };
