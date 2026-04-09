@@ -22,13 +22,38 @@
 .question .questionTab:hover{
     box-shadow: 0 0 15px var(--iconColor2);
 }
-.question .questionTab p span:first-child{
-    padding: 13px 20px;
+.question .questionTab p:first-child{
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    text-align: center;
     border-radius: 100px;
     background-color: var(--iconColor2);
     box-shadow: 0 0 3px var(--iconColor2);
     color: white;
     margin-right: 20px;
+}
+.question .questionTab section{
+    display: flex;
+    align-items: center;
+}
+.question .questionTab section:first-child{
+    width: 100%;
+}
+.question .questionTab section textarea{
+    resize: none;
+    padding: 10px;
+    width: 70%;
+    font-size: 19px;
+    border: none;
+    box-shadow: 0 0 3px var(--iconColor2);
+    outline: none;
+
+    text-indent: 10px;
+    border-radius: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 .question .questionTab button{
     padding: 15px;
@@ -44,41 +69,17 @@
     background-color: var(--iconColor2);
     color: white;
 }
-.question .answersContainer{
+.question .answersContainer section{
     padding: 20px;
-}
-.question .answersContainer section{
-    width: 100%;
-}
-.question .answersContainer section{
-    margin-top: 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .question .answersContainer section button{
-    padding: 10px;
+    padding: 15px;
     background-color: var(--iconColor2);
     box-shadow: 0 0 5px var(--iconColor2);
-    color: white;
     border: none;
     border-radius: 5px;
-}
-.question .answersContainer section input[type='checkbox']{
-    appearance: none;
-    padding: 15px;
-}
-.question .answersContainer section input{
-    margin: 10px;
-}
-.question .answersContainer section input:first-child{
-    border: 3px solid var(--iconColor2);
-    border-radius: 3px;
-    background-color: transparent;
-}
-.question .answersContainer section input:last-child{
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    border-bottom: 3px solid var(--iconColor2);
+    color: white;
 }
