@@ -1,0 +1,40 @@
+.question{
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 3px var(--iconColor2);
+    overflow: hidden;
+    border-radius: 10px;
+}
+.question .questionTab{
+    box-shadow: 0 0 3px var(--iconColor2);
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question .questionTab span:first-child{
+    background-color: var(--iconColor2);
+    padding: 15px 22px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.question .questionTab button{
+    padding: 20px;
+    font-size: 18px;
+    margin-right: 10px;
+    background-color: var(--iconColor2);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: ease 0.3s;
+    user-select: none;
+    cursor: pointer;
+}
+.question .questionTab button:hover{
+    background-color: var(--aside-LightMode);
+    color: var(--iconColor2);
+    transform: rotate(15deg);
+}

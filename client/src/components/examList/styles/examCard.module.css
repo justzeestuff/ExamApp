@@ -1,0 +1,31 @@
+.examCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    /* padding: 50px; */
+    font-size: 21px;
+    box-shadow: 0 0 3px var(--shadow-colors);
+    border-radius: 7px;
+}
+.examCard section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.examCard button{
+    padding: 15px;
+    border: none;
+    box-shadow: 0 0 3px var(--iconColor2);
+    background-color: var(--iconColor2);
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+.examCard button:hover{
+    background-color: var(--aside-LightMode);
+    color: var(--iconColor2);
+    transform: rotate(10deg);
+}

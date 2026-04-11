@@ -12,11 +12,11 @@
     width: 100%;
     box-shadow: 0 0 3px var(--shadow-colors);
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
-.exams .allExams section{
+.exams .allExams section:first-child{
     color: black;
-    padding: 20px;
+    padding: 30px 20px 0 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -49,6 +49,9 @@
     font-weight: lighter;
     font-size: 14px;
 }
+.exams .allExams div{
+    padding: 20px 20px;
+}
 .exams .createExam{
     padding: 10px;
     background-color: var(--iconColor2);
@@ -60,36 +63,4 @@
     position: absolute;
     top: 50px;
     right: 50px;
-}
-.exams .createExamPanel{
-    padding: 20px;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    box-shadow: 0 0 3px var(--shadow-colors);
-    border-radius: 5px;
-}
-.exams .createExamPanel h1{
-    font-size: 16px;
-}
-.exams .createExamPanel .title{
-    display: flex;
-    justify-content: space-between;
-}
-.exams .createExamPanel .inputField input{
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 0 2px var(--shadow-colors);
-    background-color: #f1f5f9;
-    margin: 20px;
-}
-.exams .createExamPanel .inputField button{
-    padding: 10px;
-    border-radius: 10px;
-    background-color: var(--iconColor2);
-    box-shadow: 0 0 10px var(--iconColor2);
-    border: none;
-    color: white;
 }

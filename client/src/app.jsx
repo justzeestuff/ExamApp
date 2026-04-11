@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion'
 
 import sidebarStyle from '../src/components/styles/sidebar.module.css'
-import Exams from './pages/Exams';
+import ExamList from './pages/ExamList.jsx';
 import Dashboard from './pages/Dashboard';
 import PageIcon from "./components/icon";
 import EditExam from './pages/EditExam.jsx';
@@ -26,8 +26,8 @@ export default function App() {
   const currentPage = () => {
     switch (page) {
       case 'home':     return <Dashboard />;
-      case 'exams':    return <Exams setPage={setPage} setData={setData} />;
-      case 'EditExam': return <EditExam examData={examData} />;
+      case 'exams':    return <ExamList setPage={setPage} setData={setData} />;
+      case 'editExam': return <EditExam examData={examData} />;
       default:         return <Dashboard />;
     }
   };

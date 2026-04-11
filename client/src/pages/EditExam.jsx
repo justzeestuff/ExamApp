@@ -1,20 +1,21 @@
 'use client'
 import { useEffect, useState } from 'react'
-import style from '../style/editExams.module.css'
-import Question from '../components/question'
+import style from '../style/editExam.module.css'
+import Question from '../components/editExam/questionCard.jsx'
 
 export default function EditExam({ examData }) {
     const stored = localStorage.getItem('subject')
     const [questions, setQuestions] = useState([])
-    const [storedQuestions, storeQuestions] = useState([])
+
+    async function CreateQuestion(){
+        const res = await fetch('http://localhost:3000/createQuestion',{
+            method: 'POST'
+        })
+    }
 
     useEffect(() => {
         if (examData?.subject) localStorage.setItem('subject', examData.subject)
     }, [examData])
-
-    function addQuestion() {
-        setQuestions(prev => [...prev, { id: Date.now() }])
-    }
 
     return (
         <div className={style.editExams}>
@@ -23,7 +24,7 @@ export default function EditExam({ examData }) {
                 <p>გამოცდის რედაქტირების გვერდი</p>
             </section>
             <section className={style.addQuestions}>
-                <button onClick={addQuestion}>კითხვის დამატება</button>
+                <button onClick={()=> setQuestions(prev => [...prev,{ id: Date.now() } ])}>კითხვის დამატება</button>
             </section>
             <div className={style.questionList}>
                 {

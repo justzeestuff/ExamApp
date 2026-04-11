@@ -1,4 +1,5 @@
-import style from '../components/styles/answer.module.css'
+import style from './styles/answer.module.css'
+
 export default function Answer(){
   function oneVariant(e){
     const clicked = e.target;
