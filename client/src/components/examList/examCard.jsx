@@ -3,9 +3,7 @@ import style from './styles/examCard.module.css'
 export default function ExamCard({subject, id, editPage, getExams}){
     async function DeleteExam(){
         const res = await fetch(`http://localhost:3000/DeleteExam/${id}`, {method: "DELETE" })
-        if(res.ok) {
-            getExams();
-        }
+        if(res.ok) getExams();
     }
 
     return(<>

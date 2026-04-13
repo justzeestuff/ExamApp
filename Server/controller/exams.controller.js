@@ -43,14 +43,15 @@ const CreateQuestions = async (req, res) => {
         await client.connect();
         const collection = client.db('exams').collection('exams');
 
+        const {question, id} = req.body
 
         const inserted = await collection.updateOne(
-            { "_id": new ObjectId('69cb6f6e6e8890b4ab92362f') },
+            { "_id":  new ObjectId(id)},
             {
                 "$push": {
                     questions: {
                         questionId: require('crypto').randomBytes(12).toString('hex'),
-                        question: req.body.question,
+                        question: question,
                         image: null,
                         answers: []
                     }

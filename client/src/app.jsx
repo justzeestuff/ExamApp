@@ -27,7 +27,7 @@ export default function App() {
     switch (page) {
       case 'home':     return <Dashboard />;
       case 'exams':    return <ExamList setPage={setPage} setData={setData} />;
-      case 'editExam': return <EditExam examData={examData} />;
+      case 'editExam': return <EditExam examData={examData}  />;
       default:         return <Dashboard />;
     }
   };
@@ -65,7 +65,7 @@ export default function App() {
             {currentPage()}
           </motion.div>
         </AnimatePresence>
-      </div>
+      </div> 
     </>
   );
 }

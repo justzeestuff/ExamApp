@@ -6,7 +6,7 @@
     border-radius: 10px;
 }
 .question .questionTab{
-    box-shadow: 0 0 3px var(--iconColor2);
+    box-shadow: 0 0 1px var(--iconColor2);
     padding: 20px;
 
     display: flex;
@@ -21,7 +21,8 @@
     margin-right: 20px;
     font-size: 20px;
 }
-.question .questionTab button{
+.question .questionTab button,
+.question .options section button{
     padding: 20px;
     font-size: 18px;
     margin-right: 10px;
@@ -33,8 +34,27 @@
     user-select: none;
     cursor: pointer;
 }
-.question .questionTab button:hover{
+.question .questionTab button:hover,
+.question .options section button:hover{
     background-color: var(--aside-LightMode);
     color: var(--iconColor2);
     transform: rotate(15deg);
+}
+.question .options{
+    height: 1px;
+    transition: ease 0.3s;
+    overflow: hidden;
+}
+.question .options section{
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question .options section p,
+.question .options section input{
+    font-size: 20px;
+}
+.question .options section button{
+    margin: 0;
 }

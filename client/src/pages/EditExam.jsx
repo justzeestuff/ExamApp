@@ -3,18 +3,13 @@ import { useEffect, useState } from 'react'
 import style from '../style/editExam.module.css'
 import Question from '../components/editExam/questionCard.jsx'
 
-export default function EditExam({ examData }) {
+export default function EditExam({ examData, examId }) {
     const stored = localStorage.getItem('subject')
     const [questions, setQuestions] = useState([])
 
-    async function CreateQuestion(){
-        const res = await fetch('http://localhost:3000/createQuestion',{
-            method: 'POST'
-        })
-    }
-
     useEffect(() => {
         if (examData?.subject) localStorage.setItem('subject', examData.subject)
+
     }, [examData])
 
     return (
@@ -29,7 +24,7 @@ export default function EditExam({ examData }) {
             <div className={style.questionList}>
                 {
                 questions.map((arr,index) => (
-                    <Question key={arr.id} index={index+1} />
+                    <Question key={arr.id} index={index+1} examId={examData} />
                 ))
                 }
             </div>
